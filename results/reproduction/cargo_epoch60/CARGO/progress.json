@@ -1,0 +1,10 @@
+{
+  "epoch": 60,
+  "max_epoch": 90,
+  "best_metric": 57.89674520492554,
+  "best_epoch": 60,
+  "complete": false,
+  "budget_stop": true,
+  "checkpoint": "model_last.pth",
+  "time": 1794064848.0456774
+}

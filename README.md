@@ -1,6 +1,26 @@
 # SeCap_AGPReID
 SeCap: Self-Calibrating and Adaptive Prompts for Cross-view Person Re-Identification in Aerial-Ground Networks (CVPR 2025 Highlight)
 
+## CARGO reproduction record
+
+This fork includes an auditable CARGO run performed on Kaggle with **two Tesla T4 GPUs**. It is a partial reproduction run, not a claim of a completed paper reproduction: training was intentionally stopped after the epoch-60 checkpoint (the configured target was 90 epochs), and the uploaded G2A-VReID data is not the paper's G2APS-ReID benchmark.
+
+The best/last resumable checkpoints, full logs, per-epoch metrics and environment/source manifests remain in the private [Kaggle artifact dataset](https://www.kaggle.com/datasets/rizwanabdullah05/secap-reproduction-artifacts). Small, reviewable outputs are versioned in [results/reproduction/cargo_epoch60](results/reproduction/cargo_epoch60/), including the training plot, exact config, metrics, launch command, and data-integrity manifest.
+
+![CARGO training curves](results/reproduction/cargo_epoch60/CARGO/training.png)
+
+At epoch 60, the best model's CARGO results were:
+
+| Protocol | Rank-1 | mAP |
+| --- | ---: | ---: |
+| Overall CARGO | 61.54 | 54.26 |
+| Aerial → Ground | 58.51 | 56.73 |
+| Ground → Aerial* | 65.15 | 52.22 |
+| Aerial → Aerial | 77.50 | 66.44 |
+| Ground → Ground | 79.46 | 68.98 |
+
+\*Ground → Aerial is a supplementary reverse-direction measurement; the released CARGO configuration uses Overall, Aerial → Ground, Aerial → Aerial and Ground → Ground. The training input contained 1,660 unreadable files, all in the CARGO training split; they were deterministically recorded and excluded. Query/gallery files were not changed.
+
 ### Updates
 
 We will update more detailed result (including dataset, training, verification) in the future

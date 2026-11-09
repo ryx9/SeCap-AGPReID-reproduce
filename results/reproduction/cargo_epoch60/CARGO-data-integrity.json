@@ -1,0 +1,6648 @@
+{
+  "source": "/kaggle/input/datasets/rizwanabdullah05/person-reid-cargo-g2a-lagper/CARGO/CARGO",
+  "validation": "parallel PIL verification of all training images",
+  "train_images_checked": 51362,
+  "excluded_train_images": [
+    {
+      "path": "train/Cam6/Cam6_day_1000_46439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1002_33527.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1003_47941.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1005_43289.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1011_37251.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1018_46752.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1019_30535.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_101_23487.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_101_23490.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1021_46593.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1021_46598.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1021_49436.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1022_38916.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1038_36656.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1041_37252.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1041_37257.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1046_35919.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_104_23778.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1051_34715.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1051_34719.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1053_30836.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1055_32485.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1060_43905.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1061_44517.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1061_49744.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1065_30837.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1065_30841.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1066_30085.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1073_35482.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1073_35488.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1074_46137.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1078_50652.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1079_30231.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1079_30236.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1082_32040.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1086_49911.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1086_49917.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1092_35774.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1096_30981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1096_30985.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_109_23489.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_10_51097.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1105_41788.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1108_36056.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1111_49750.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1115_36358.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1120_31439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1123_39522.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1123_39525.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1127_44053.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1128_39074.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1129_38155.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1130_40916.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1131_50060.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1138_35776.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_113_25040.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1140_33079.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1142_28702.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1145_47342.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1153_41059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1153_41064.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1154_45258.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1154_45262.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1162_46754.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1163_40756.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1164_37858.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1168_29165.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_116_24263.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_116_24267.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1170_35920.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1171_33080.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1176_44676.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1178_36353.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1181_44212.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1183_41652.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1187_43451.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1193_31288.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1194_45973.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1196_36354.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_11_22341.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_11_50808.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1200_44514.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1201_38921.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1204_44059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1205_43290.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1209_48379.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1209_48383.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1210_40757.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1212_37407.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1214_29618.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1219_40450.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1219_40455.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_121_25170.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1220_42985.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1222_40917.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1223_47038.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_122_24137.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1231_40913.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1231_40918.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1237_39826.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1238_44818.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1240_50658.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1242_33226.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1249_47480.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1249_47486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_124_24526.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_124_24530.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1254_39071.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1254_39075.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1260_35340.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1260_35345.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1261_38156.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_126_24661.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1271_30690.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1272_39076.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1278_29003.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_127_24141.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1283_36959.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_128_24011.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1295_37563.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1298_45404.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_130_23880.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_130_23883.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1317_29625.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1321_42531.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1321_42537.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1331_40149.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1333_36509.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1334_45974.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1340_29466.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1348_33981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1349_47191.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1353_30986.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1357_48670.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1358_34575.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1362_32638.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1362_32642.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1364_44367.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1365_33529.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1366_42681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1368_35185.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1369_41653.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1370_29937.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_137_24142.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1382_31136.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1382_31142.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_138_25689.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1391_37408.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1391_37413.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1396_32197.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1409_50513.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1411_47942.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1412_49918.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1422_31732.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1425_46600.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1429_30843.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1430_47633.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1438_35489.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1440_44823.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1448_48090.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_144_24527.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_144_24531.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1450_34720.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1453_45975.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1453_45980.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1461_50654.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1478_49442.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1480_47188.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1490_29620.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1490_29626.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1491_30385.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1496_41505.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1509_34868.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1513_42986.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1514_39827.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1516_29317.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1517_41361.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1520_30685.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1520_30691.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1523_35490.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1526_41362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1526_48829.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1534_48380.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1534_48384.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1552_38151.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1560_29166.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1561_48381.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1563_33987.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1571_34439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1582_43458.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_158_24915.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_158_24919.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_160_24143.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1610_39678.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1613_30386.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1620_36510.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1626_38312.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1628_33988.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1630_30387.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1631_31885.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1634_44516.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1634_44520.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1635_29472.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1641_43912.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1644_30537.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1646_46133.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1670_50061.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1683_34129.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1687_30686.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1688_37717.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1693_48830.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1701_29944.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1704_45259.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_170_24785.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1716_40602.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1728_47939.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1730_40152.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1731_32041.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1731_32046.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1739_44671.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1741_40457.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1748_43291.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1758_30232.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1768_43761.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1788_28704.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_178_24400.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1796_45981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1815_45406.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_181_25297.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1822_29318.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1828_37713.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1841_34869.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1845_47338.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_184_25175.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1858_30988.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1879_33234.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1880_41790.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1894_48091.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1905_42688.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_190_49433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1910_32491.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1918_44056.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_191_25176.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1922_48230.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1924_35630.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1925_30687.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1927_43608.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1936_34576.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1942_42689.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1947_50215.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1953_39370.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1958_29000.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_196_25046.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1971_31880.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1971_31886.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1989_45977.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1993_43140.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1994_31590.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_1997_37414.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_199_24921.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2003_47638.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2008_29787.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2012_47345.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_201_25559.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2022_37101.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2023_30088.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2027_42534.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_202_25560.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_202_25564.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2031_47791.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_203_24012.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2041_44672.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2048_31733.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_204_24791.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_205_25428.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2068_48387.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2069_41510.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2070_30234.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2073_41942.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2075_37254.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_208_24529.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2090_34870.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2095_39371.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_210_24402.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2111_29939.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2123_41506.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2129_38461.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2152_36809.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2165_40147.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_216_24013.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2184_39829.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2188_48231.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2190_43909.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2198_33230.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2198_33236.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_219_25302.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_21_23151.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2201_49137.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2204_47940.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2211_50520.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2219_45120.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_221_24265.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_221_24269.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2221_48831.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2222_29001.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2229_46896.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2240_34441.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2241_32351.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2246_36511.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2248_31436.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2249_44673.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2249_44679.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2251_47634.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2251_47640.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2254_41943.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2257_33531.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2269_34871.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2270_41507.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2280_28700.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2283_38468.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_228_23882.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2305_32933.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2306_29319.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2320_36660.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2326_34288.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2328_46897.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2331_29627.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2332_47792.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2335_31591.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2336_44521.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2344_39830.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2349_45407.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2379_36512.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2386_44522.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2387_46287.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_23_22951.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2408_40605.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2408_40611.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2415_45687.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2416_34872.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2418_34582.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2421_45835.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2425_42540.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2426_36357.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2435_31887.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2446_45978.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2460_32201.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2465_40458.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2466_47196.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2483_38465.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2488_50369.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2488_50375.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_2492_32645.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_250_49277.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_250_49283.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_257_27190.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_265_28284.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_267_26510.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_268_25825.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_277_27866.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_279_27871.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_27_22614.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_27_22616.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_283_28008.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_285_28146.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_285_28150.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_287_28420.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_294_26372.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_295_28151.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_296_28152.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_29_48976.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_300_28418.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_305_26922.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_327_26235.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_334_27326.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_334_49915.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_348_26785.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_34_50943.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_34_50948.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_354_26098.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_356_27872.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_35_51100.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_36_51250.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_374_28005.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_37_51248.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_384_27598.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_385_26787.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_38_22407.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_38_22409.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_400_26511.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_401_27333.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_416_28287.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_420_28557.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_431_27192.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_438_26508.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_43_22410.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_43_50807.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_443_25831.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_453_27733.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_45_51253.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_461_28422.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_465_26375.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_482_27874.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_486_28153.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_489_26376.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_48_50805.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_492_26924.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_496_26238.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_507_25955.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_507_25958.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_512_26788.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_513_27463.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_517_28419.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_519_50517.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_52_22747.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_536_45683.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_536_45688.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_537_35020.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_538_47788.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_540_38153.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_544_35182.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_557_36803.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_563_31286.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_569_42235.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_571_32342.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_581_47636.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_585_49139.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_596_34573.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_596_34579.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_617_46756.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_61_50949.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_620_41938.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_621_44215.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_62_22680.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_63_51096.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_655_42079.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_663_29468.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_667_49440.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_668_35631.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_66_22340.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_678_38767.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_681_34432.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_69_23588.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_706_37412.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_709_48823.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_711_41939.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_714_46443.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_719_40909.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_744_37710.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_746_46592.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_750_32043.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_756_50212.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_762_34131.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_763_37856.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_763_37860.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_765_29622.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_769_35183.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_771_32488.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_774_41940.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_778_43456.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_783_35486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_785_38768.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_786_33681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_786_33687.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_788_36804.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_789_32343.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_78_50211.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_78_50216.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_790_48978.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_792_29469.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_793_38304.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_796_48088.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_797_43752.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_799_42834.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_79_23395.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_7_22681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_804_35184.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_80_23589.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_811_31432.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_813_40148.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_817_30384.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_817_30390.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_820_37711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_820_37716.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_821_39991.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_822_30230.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_826_46131.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_826_46136.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_83_23775.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_83_23777.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_840_36054.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_840_36058.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_842_31433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_843_42237.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_844_43137.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_848_38305.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_84_23677.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_84_23680.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_850_45408.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_853_47485.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_854_32344.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_865_44674.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_868_37861.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_869_42238.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_872_29470.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_873_34284.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_873_34290.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_875_44974.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_877_49743.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_884_49140.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_884_50371.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_898_29936.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_8_51099.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_900_37250.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_900_37256.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_901_30683.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_906_44057.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_90_23300.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_90_49587.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_90_49591.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_913_33381.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_928_44362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_92_23587.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_930_31434.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_930_31438.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_932_39069.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_932_39073.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_934_35021.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_934_35027.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_940_35028.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_942_45409.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_946_48085.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_946_48979.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_956_42536.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_957_42835.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_95_23304.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_960_49136.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_969_45118.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_96_23394.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_971_31736.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_972_36055.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_972_36059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_973_48667.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_984_31140.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_985_38154.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_986_48668.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_98_23678.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_98_23681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_996_33688.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_998_46438.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_998_46444.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_9_22545.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_9_50945.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_day_9_50950.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1009_41714.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1009_41719.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1010_40062.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1010_40068.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1014_41275.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1016_44127.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1016_44132.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1023_48584.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1023_48590.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1024_39594.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1024_39599.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1025_33907.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1026_42157.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1026_49511.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1028_46678.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1030_31649.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1030_31653.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1035_38988.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1036_31201.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1037_32855.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1039_43831.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1057_30606.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_105_23253.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1068_38844.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_106_23722.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1071_35692.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1078_39901.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1078_50579.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1078_50583.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1083_33145.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1090_44588.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1090_44594.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1091_46679.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1093_35253.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1095_35094.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1095_35100.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_10_22779.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1103_38226.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1107_40520.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1109_30458.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_110_23627.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_110_23633.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1110_48446.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1111_39595.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1113_46819.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1116_45755.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1117_44896.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1119_31955.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_111_23439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_111_23441.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1121_48011.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1122_36276.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1122_36281.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_112_24196.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_112_24204.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1131_42445.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1132_39759.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1135_43360.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1135_43366.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1136_34789.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1136_34793.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1139_45608.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1139_45612.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1147_42009.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_114_24971.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_114_49822.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1152_31057.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1152_31062.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1155_32561.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1158_40831.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1162_49825.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1166_38222.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1166_38227.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1167_33142.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1174_45324.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1175_48746.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1177_47701.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1177_47706.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1184_31956.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1185_32117.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1185_32121.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_118_23816.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_118_23820.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1198_42599.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1199_30762.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_119_23817.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_119_23821.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1204_50122.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1211_50433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1211_50443.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1216_46361.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1217_31505.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1217_31511.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1224_39284.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1224_39289.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1227_48153.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1227_48159.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1235_33444.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1235_33450.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1236_39596.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1236_39601.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1239_45183.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1239_45188.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1239_49832.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_123_24324.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1243_34641.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1244_29395.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1246_48585.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1246_48591.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1248_48017.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1250_30006.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1250_30011.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1255_31962.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1256_46824.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_125_24844.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_125_24847.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_125_24851.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1262_32261.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1262_32265.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1263_42005.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1264_38845.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1264_38851.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1266_47111.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1268_31202.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1279_46043.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1279_46047.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1280_40827.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1281_41710.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1290_30007.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1293_43679.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1293_43684.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1296_38223.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1296_38228.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_129_25623.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_129_25626.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1300_40521.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1302_41859.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1302_41865.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1303_40224.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1304_41711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1304_41721.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1306_48301.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1315_40981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1319_37784.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1319_37788.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_131_25226.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_131_25229.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_131_25233.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1322_40370.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1324_34198.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1327_41276.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_132_25227.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_132_25230.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1330_44749.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1336_48741.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1336_48747.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1337_34054.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1338_47553.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1339_34794.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1344_38529.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1344_38534.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1344_38540.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1345_44133.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1347_43525.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_134_24460.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1355_34055.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1356_34056.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1360_48893.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1360_48898.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1361_35410.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1367_46048.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1375_37929.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1376_47406.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1380_38535.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1383_42906.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1385_49351.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1385_49356.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1386_30309.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1386_30314.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1388_43827.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1389_41136.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1389_41141.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_138_50281.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_138_50291.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1390_28775.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1392_29240.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1393_30150.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1393_30156.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1395_43367.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_139_49823.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_139_49829.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1410_29236.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1410_29241.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1411_49199.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1412_34933.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1413_45480.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1415_45325.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1415_45329.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1415_45335.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1416_32706.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1418_45184.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1418_45194.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_141_24325.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1421_29857.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1424_44432.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1428_47260.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1428_47264.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1437_43978.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1439_46964.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_143_23947.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1442_46674.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1443_43983.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1446_31958.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1446_31963.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1447_35552.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1454_30157.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1459_35258.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1460_36578.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_146_24720.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_146_24724.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1471_34199.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1472_38989.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1472_38994.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_147_25106.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1486_39290.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1486_39295.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1488_44291.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1493_34499.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1497_44897.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1499_31794.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_14_22981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1500_42302.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1501_48889.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1501_48894.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1506_39912.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_150_25358.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_150_25361.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1510_38995.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1510_39000.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1518_41712.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1518_41716.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_151_25486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_151_25489.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_151_25493.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1521_42600.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1521_42603.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1521_42609.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1525_35259.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1527_45899.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1528_38229.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_152_25490.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1531_33445.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1532_46357.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1532_46362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1532_46367.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1536_41717.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1536_41722.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_153_24457.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_153_24461.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1541_42749.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1542_44750.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1543_33909.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1546_32707.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1546_32710.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1548_29084.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1548_29089.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_154_24969.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_154_24972.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_154_24976.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1551_50434.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1553_40064.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1553_40070.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1558_45751.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_155_25107.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1562_31358.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1565_34352.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1569_41133.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1569_41142.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_156_25359.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_156_25362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_156_25366.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1570_32266.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1573_43362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1574_48014.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1574_48019.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1575_50435.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1575_50440.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1577_45046.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1578_34500.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_157_24973.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_157_24977.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1583_48302.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1584_40065.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1586_39597.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1586_39602.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1592_41861.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1592_41866.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1593_36128.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1596_35096.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1597_39435.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_15_22440.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_15_22444.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_15_50874.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1603_39286.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1603_39291.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1603_39296.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1605_34642.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1606_32118.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1606_32122.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1609_46049.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1609_46054.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1611_28929.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1623_32711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1625_36425.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1625_36431.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1628_50441.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1628_50446.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1640_37474.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1640_37484.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1643_31203.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1644_49357.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1644_49361.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1646_49207.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1655_44589.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1658_47554.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1659_38388.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1660_34795.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1661_36426.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1661_36432.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1663_49362.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1669_49975.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_166_24326.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_166_24330.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1671_41576.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1672_46363.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1672_46368.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1673_31210.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1674_38079.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1676_46203.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1676_46208.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1681_41143.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1682_46513.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1688_49051.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1690_37789.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1692_43059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_169_24845.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_169_24848.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1706_38384.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1709_49202.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1709_49208.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1710_38385.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1710_38389.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1711_37018.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1713_44746.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1713_44751.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1714_46681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1715_48160.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1718_46524.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1719_36579.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_171_24587.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1720_31353.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1721_40371.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1723_33446.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1724_45610.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1726_31354.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1728_49659.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1728_49669.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1735_29237.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1735_29242.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1737_35097.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1739_48895.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_173_25108.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1740_29090.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1742_37166.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1747_41573.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1750_49513.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1751_33447.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1752_32414.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1759_47856.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1760_38990.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1760_38996.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1760_39001.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1764_30304.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1764_30315.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_176_24462.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1771_43680.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1771_43685.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1772_36876.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1774_33607.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1774_33612.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1775_38991.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1775_38997.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1778_35103.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1781_41138.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1784_40522.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1786_35260.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1790_44902.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1791_30455.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1795_35261.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1798_42149.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1798_42158.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_179_23818.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_17_23049.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_17_51320.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1805_49973.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1807_30456.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1816_41277.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1816_41282.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1817_41427.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1819_34935.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1821_36124.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1821_36129.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1823_38530.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1823_38536.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1825_44752.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1827_47559.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1829_38080.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_182_24069.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_182_24076.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1830_49057.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1832_37785.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1833_49660.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1833_49666.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1837_37475.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1838_41428.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1840_42303.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1851_45481.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1854_40676.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1861_45895.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1867_33448.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1867_33452.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1868_34643.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1869_42755.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_186_24721.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1870_30602.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1873_42756.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1878_48447.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1885_32556.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1887_31508.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1889_41283.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1893_47261.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1893_47266.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1896_44134.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1897_48156.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_18_22711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_18_22713.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_18_51020.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1904_41429.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1906_41434.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1907_30462.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1908_46204.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1908_50129.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1909_45041.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1909_45047.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1911_46820.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1911_46826.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1912_28772.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1913_40523.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1916_33755.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1926_34200.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1928_32557.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1929_50293.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1932_39137.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1932_39142.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1935_35688.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1935_35693.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1938_32267.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1941_30603.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1943_29391.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1945_35262.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1946_43363.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1946_43368.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1949_47112.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1952_46971.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1955_48749.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1956_37935.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1957_45486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1963_48162.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1968_42912.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1969_45185.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1969_45195.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1974_36581.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1974_36585.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1975_37167.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1977_43828.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1977_43832.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1978_41135.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1978_41139.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1978_41145.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_197_25487.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_197_25495.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1981_40216.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1985_38686.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1986_34638.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1986_50727.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_198_25235.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1995_42159.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_1999_37791.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_19_22507.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_19_22509.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_19_50877.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2001_48592.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2005_44903.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_200_24853.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2011_36433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2014_45190.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2014_45196.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2015_37931.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2017_42908.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2019_37638.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2026_35557.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2026_35562.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2028_43522.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2032_34940.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2033_49827.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2037_39002.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2037_50125.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2038_42307.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2042_47707.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2043_50584.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2045_48587.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2046_48890.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2046_48896.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2047_34496.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2047_34501.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2053_45896.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2054_43829.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2054_43833.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2056_44288.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2063_39440.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2064_42308.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2065_48750.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_206_24327.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2074_40828.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2076_32262.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2076_32268.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_207_24197.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_207_24201.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2083_35415.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2085_32123.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2091_40071.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2093_36727.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2093_36732.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2099_31964.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2100_29545.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2102_29091.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2105_32410.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2106_45191.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2109_30905.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2109_30910.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2112_50283.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2121_38681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2124_50295.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2126_35843.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2126_35848.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2127_36728.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2127_36733.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2128_47863.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_212_24198.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2131_42450.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2132_37481.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2132_37486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2133_42155.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2133_42160.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2137_43060.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2140_34791.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2140_34796.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2145_42601.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2145_42605.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2145_42611.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_214_24722.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2155_38537.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2155_38542.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2156_34941.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2158_34938.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2159_34201.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2163_43523.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2164_37633.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2166_31355.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2166_31360.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2167_48448.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2167_48454.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2179_45042.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2179_45048.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2180_45897.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2181_47708.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2182_49978.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2183_35553.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2185_39143.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2189_40982.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2192_36282.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2197_37634.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2197_37640.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2200_33004.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2208_29393.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2208_29397.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2212_30305.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2212_30311.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2212_30316.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2213_36278.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2213_36283.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2214_41278.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2214_41284.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2215_30015.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2217_35849.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2218_30463.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_221_50723.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_221_50729.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2225_36130.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2226_41574.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2226_41579.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2230_43681.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2230_43686.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2232_40983.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2233_38543.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2234_29863.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2235_40375.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2238_48594.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2239_47858.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2258_34202.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2258_34206.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2259_36873.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_225_24459.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_225_24463.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2261_47703.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2266_31503.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2266_31514.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_226_25628.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2272_33000.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2272_33005.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2277_28931.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2277_28937.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2281_37476.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2281_37487.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2282_30759.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2285_50722.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2286_46967.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2289_34203.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2294_42757.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2297_40529.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_229_23949.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2302_46821.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2302_46827.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2307_42913.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2308_45898.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2308_45902.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_230_24723.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_230_24726.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2313_46822.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2314_30760.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2315_31059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2315_31064.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2318_31361.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2320_49353.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2320_49359.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2324_43061.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2325_38230.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2327_37020.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2327_37024.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2329_28774.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2333_45757.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_233_24974.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_233_24978.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2341_31651.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2343_36734.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2351_42151.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2351_42161.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2353_37325.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2354_29705.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2356_30906.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2357_39446.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2358_35845.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_235_23946.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_235_23950.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2363_40376.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2365_39297.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2367_30604.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2367_30609.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2368_46520.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2372_37168.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2377_34354.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2384_39603.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2389_36586.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_238_24071.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_238_24074.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2390_45747.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2390_45758.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2391_45753.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2393_34349.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2393_34355.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2394_42452.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2396_47113.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2398_40222.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2398_40226.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_239_25228.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2402_48304.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2404_43524.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2405_31060.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2405_31070.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2406_49672.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2407_44433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2407_44438.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_240_25109.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2410_30911.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2411_30908.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2411_30912.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2420_39138.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2420_39144.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2423_33608.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2424_35690.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2428_44129.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2428_49979.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_242_24589.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_242_24593.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_242_24597.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2431_33763.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2439_39903.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2439_39907.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2439_39913.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_243_24072.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_243_24079.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2440_32119.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2442_47108.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2447_44136.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2448_39294.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2448_39298.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2451_47860.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2451_47865.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2452_31656.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2455_48449.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2455_48455.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2458_47560.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2459_43834.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2462_32558.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2468_34059.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_246_25360.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_246_25364.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_246_25368.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2473_38077.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2473_38082.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2476_33759.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_2495_46207.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_253_25622.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_253_25629.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_255_24199.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_258_26436.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_258_26441.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_25_22643.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_25_22645.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_261_26161.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_262_26859.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_263_26855.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_266_26709.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_26_22714.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_26_51021.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_271_25757.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_272_28078.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_274_28221.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_276_26714.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_281_27253.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_284_27796.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_28_51317.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_28_51322.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_302_27797.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_307_26300.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_30_51170.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_313_28485.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_314_27524.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_315_26018.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_317_27118.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_31_51167.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_31_51172.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_320_28346.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_325_26860.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_326_28615.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_329_26301.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_329_26306.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_32_23048.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_32_23050.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_32_51321.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_330_27119.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_330_27123.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_332_28486.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_337_26988.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_33_49203.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_33_51318.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_343_25755.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_343_25758.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_352_26019.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_353_27120.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_355_28616.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_357_27798.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_357_27800.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_360_28079.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_361_26985.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_361_26989.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_362_27388.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_363_27927.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_370_27661.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_370_27665.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_371_25893.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_372_26986.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_372_26990.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_372_26994.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_373_27928.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_375_27389.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_375_27393.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_376_26164.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_377_27390.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_377_27394.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_37_22915.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_381_50719.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_382_27666.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_386_26711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_388_26438.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_391_26857.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_391_26861.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_399_26439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_399_26443.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_3_22439.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_402_26160.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_40_23115.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_40_23117.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_410_26579.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_410_26582.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_412_49663.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_418_27663.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_418_27667.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_41_22980.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_41_22982.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_41_22984.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_423_27126.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_423_49506.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_425_28076.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_425_28084.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_426_26025.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_437_28483.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_441_26991.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_444_26440.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_448_27668.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_449_26580.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_449_26583.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_44_51324.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_450_25894.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_451_50580.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_452_26576.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_454_28347.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_454_28351.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_455_28220.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_455_28223.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_457_27259.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_45_22914.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_45_22916.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_463_28085.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_466_28348.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_466_28352.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_467_27260.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_467_27263.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_46_51173.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_470_27391.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_470_27395.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_471_27527.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_471_27530.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_472_27392.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_472_27396.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_474_26302.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_477_27528.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_477_27531.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_478_28484.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_47_51174.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_480_28082.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_484_50725.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_48_22373.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_48_22375.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_491_27933.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_499_26862.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_500_27934.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_502_26717.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_50_50876.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_514_28617.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_514_28621.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_515_27931.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_516_28618.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_517_50126.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_519_27256.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_51_22372.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_51_22374.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_51_22376.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_522_44289.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_52_51016.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_530_36429.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_533_44122.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_53_23186.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_541_43677.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_542_29234.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_548_37321.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_54_22644.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_550_48009.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_552_44590.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_554_39756.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_555_34497.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_556_40369.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_559_39593.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_55_22577.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_565_32852.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_567_35986.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_568_46354.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_572_38683.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_575_38678.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_579_42002.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_579_42007.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_585_37322.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_588_29388.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_588_29394.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_58_51319.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_58_51325.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_591_29235.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_593_30600.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_597_44434.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_59_23116.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_5_23183.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_5_23185.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_600_33299.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_608_47699.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_608_47704.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_60_51013.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_60_51017.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_612_48897.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_613_40673.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_613_40678.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_614_45894.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_614_49658.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_614_49664.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_626_44294.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_628_45038.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_62_51019.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_630_40980.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_634_35691.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_639_38842.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_639_38847.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_648_32997.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_64_50285.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_650_33139.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_654_40674.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_654_40679.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_659_34493.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_659_34498.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_65_22780.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_665_40067.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_671_43364.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_673_30153.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_674_41863.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_677_36724.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_677_36729.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_682_30306.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_686_32850.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_686_32854.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_690_31648.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_690_31652.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_693_32259.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_695_33449.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_699_47408.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_704_32264.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_705_41274.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_709_38848.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_70_23437.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_712_29701.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_715_28928.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_715_28932.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_716_39899.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_716_39904.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_71_23251.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_723_43205.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_725_35840.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_727_39751.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_728_47700.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_728_47705.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_728_47711.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_729_33300.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_731_36126.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_732_28933.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_743_37017.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_745_30307.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_745_30313.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_757_28934.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_759_44894.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_75_23726.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_760_30755.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_761_35846.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_767_29082.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_767_29087.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_769_50432.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_769_50437.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_76_23535.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_76_23538.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_773_39900.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_773_39905.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_773_39909.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_776_38843.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_776_38849.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_77_23346.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_780_44585.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_780_44591.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_781_43683.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_782_40675.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_784_41572.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_784_41575.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_790_47109.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_791_44748.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_7_51009.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_801_43975.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_801_43979.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_802_44286.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_812_44586.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_812_44592.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_814_30756.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_818_45044.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_819_32553.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_819_32559.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_823_30308.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_828_50581.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_82_23536.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_834_44593.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_836_46521.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_837_47404.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_839_43365.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_841_34788.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_841_34792.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_845_29697.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_845_29702.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_851_47405.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_856_42910.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_858_36273.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_858_49350.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_858_49355.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_867_39139.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_86_23252.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_86_23255.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_871_39135.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_871_39145.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_874_45745.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_876_33603.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_877_47551.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_879_47105.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_879_47110.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_880_35555.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_881_32708.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_883_33599.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_884_32704.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_886_47558.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_889_35556.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_889_35560.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_892_46962.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_893_35408.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_893_35412.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_899_40212.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_899_40223.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_89_23344.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_902_33003.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_903_46671.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_905_40825.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_905_40829.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_909_33301.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_909_33305.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_910_46517.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_917_32120.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_919_37928.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_922_39748.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_922_39752.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_922_39758.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_923_46360.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_925_38679.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_929_30010.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_933_50578.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_936_37477.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_936_37482.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_939_47855.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_939_47861.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_93_23537.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_93_23540.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_941_36731.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_949_43211.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_951_42003.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_953_45327.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_953_45333.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_958_40213.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_959_39433.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_959_39437.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_959_39443.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_961_46041.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_961_46050.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_963_29856.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_963_29860.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_963_29865.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_967_39434.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_967_39444.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_974_32411.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_975_42444.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_975_42448.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_979_41864.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_97_23724.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_983_31056.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_987_48006.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_995_43981.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_997_32560.jpg",
+      "error": "UnidentifiedImageError"
+    },
+    {
+      "path": "train/Cam6/Cam6_night_99_23626.jpg",
+      "error": "UnidentifiedImageError"
+    }
+  ],
+  "query_gallery_modified": false
+}

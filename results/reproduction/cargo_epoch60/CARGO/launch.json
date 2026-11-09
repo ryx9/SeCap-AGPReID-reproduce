@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/tmp/secap-env/bin/python",
+    "kaggle/train_wrapper.py",
+    "--config-file",
+    "configs/CARGO/secap.yml",
+    "--num-gpus",
+    "2",
+    "--resume",
+    "MODEL.BACKBONE.PRETRAIN_PATH",
+    "/tmp/jx_vit_base_p16_224-80ecf9dd.pth",
+    "OUTPUT_DIR",
+    "/kaggle/working/secap-artifacts/CARGO",
+    "SOLVER.IMS_PER_BATCH",
+    "64",
+    "SOLVER.MAX_EPOCH",
+    "90",
+    "MODEL.BACKBONE.STRIDE_SIZE",
+    "(16, 16)",
+    "DATALOADER.NUM_WORKERS",
+    "2",
+    "TEST.IMS_PER_BATCH",
+    "64",
+    "TEST.EVAL_PERIOD",
+    "5",
+    "DATASETS.TESTS",
+    "(\"CARGO\", \"CARGO_AG\", \"CARGO_GA\", \"CARGO_AA\", \"CARGO_GG\")"
+  ],
+  "seed": 0,
+  "distributed_note": "Author DDP: triplet mining and BatchNorm use per-GPU batches; two GPUs differ from single-GPU paper training."
+}

@@ -1,0 +1,8 @@
+[project]
+name = "secap-agpreid-reproduce"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "kaggle>=2.2.5",
+    "six>=1.17.0",
+]
