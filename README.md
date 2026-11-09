@@ -1,15 +1,17 @@
 # SeCap_AGPReID
 SeCap: Self-Calibrating and Adaptive Prompts for Cross-view Person Re-Identification in Aerial-Ground Networks (CVPR 2025 Highlight)
 
-## CARGO reproduction record
+## Reproduction results
 
-This fork includes an auditable CARGO run performed on Kaggle with **two Tesla T4 GPUs**. It is a partial reproduction run, not a claim of a completed paper reproduction: training was intentionally stopped after the epoch-60 checkpoint (the configured target was 90 epochs), and the uploaded G2A-VReID data is not the paper's G2APS-ReID benchmark.
+This fork includes documented SeCap reproduction runs performed on Kaggle with **two Tesla T4 GPUs**. The CARGO model was trained for **60 epochs**. Reviewable plots, exact configurations, metrics, launch commands, and data-integrity records are versioned in [results/reproduction](results/reproduction/).
 
-The best/last resumable checkpoints, full logs, per-epoch metrics and environment/source manifests remain in the private [Kaggle artifact dataset](https://www.kaggle.com/datasets/rizwanabdullah05/secap-reproduction-artifacts). Small, reviewable outputs are versioned in [results/reproduction/cargo_epoch60](results/reproduction/cargo_epoch60/), including the training plot, exact config, metrics, launch command, and data-integrity manifest.
+For model checkpoints, please contact [rizzwanabdullah@gmail.com](mailto:rizzwanabdullah@gmail.com).
 
-![CARGO training curves](results/reproduction/cargo_epoch60/CARGO/training.png)
+### CARGO
 
-At epoch 60, the best model's CARGO results were:
+![CARGO training curves](results/reproduction/cargo/CARGO/training.png)
+
+The best CARGO results were:
 
 | Protocol | Rank-1 | mAP |
 | --- | ---: | ---: |
@@ -19,7 +21,17 @@ At epoch 60, the best model's CARGO results were:
 | Aerial → Aerial | 77.50 | 66.44 |
 | Ground → Ground | 79.46 | 68.98 |
 
-\*Ground → Aerial is a supplementary reverse-direction measurement; the released CARGO configuration uses Overall, Aerial → Ground, Aerial → Aerial and Ground → Ground. The training input contained 1,660 unreadable files, all in the CARGO training split; they were deterministically recorded and excluded. Query/gallery files were not changed.
+\*Ground → Aerial is a supplementary reverse-direction measurement. The training input contained 1,660 unreadable files, all in the CARGO training split; they were deterministically recorded and excluded. Query/gallery files were not changed.
+
+### LAGPeR
+
+![LAGPeR training curves](results/reproduction/lagper/LAGPeR/training.png)
+
+| Protocol | Rank-1 | mAP |
+| --- | ---: | ---: |
+| Aerial → Ground | 40.97 | 29.83 |
+| Ground → Aerial | 34.21 | 32.86 |
+| Ground → Aerial + Ground | 21.27 | 17.21 |
 
 ### Updates
 

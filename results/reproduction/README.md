@@ -2,8 +2,10 @@
 
 This directory contains small, reviewable outputs exported from the private Kaggle artifact dataset. Raw images and large model checkpoints are intentionally not tracked in Git.
 
-## CARGO epoch-60 run
+## Published runs
 
-[`cargo_epoch60/`](cargo_epoch60/) records the best/last state after the user-requested stop at epoch 60 of a planned 90-epoch CARGO run on two T4 GPUs. It contains the plotted training history, epoch metrics, best evaluation, launch configuration, and the training-image integrity audit.
+[`cargo/`](cargo/) records the CARGO model trained for 60 epochs on two T4 GPUs. It contains the plotted training history, metrics, launch configuration, and the training-image integrity audit.
 
-The run is reproducible from the committed Kaggle notebook and source adapters. It must not be represented as a completed 90-epoch reproduction or as a reproduction of the paper's G2APS-ReID results.
+[`lagper/`](lagper/) records the LAGPeR training history and evaluation outputs.
+
+The run materials are reproducible from the committed Kaggle notebook and source adapters. For checkpoint access, contact [rizzwanabdullah@gmail.com](mailto:rizzwanabdullah@gmail.com).

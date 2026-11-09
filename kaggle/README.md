@@ -6,17 +6,17 @@ The notebook source is [notebook/secap_reproduction.ipynb](notebook/secap_reprod
 
 ## Published CARGO run
 
-The checked-in notebook is currently scoped to **CARGO only**, with a 90-epoch target. The completed Kaggle session was deliberately stopped after its epoch-60 checkpoint. This is therefore a resumable **partial** CARGO reproduction, not a completed paper-result claim. Its plot, exact epoch-60 metrics, configuration, launch metadata, and data-integrity report are committed under [../results/reproduction/cargo_epoch60](../results/reproduction/cargo_epoch60/); complete private checkpoints remain in the [Kaggle artifact dataset](https://www.kaggle.com/datasets/rizwanabdullah05/secap-reproduction-artifacts).
+The checked-in notebook is currently scoped to **CARGO only**. The published CARGO model was trained for 60 epochs. Its plot, metrics, configuration, launch metadata, and data-integrity report are committed under [../results/reproduction/cargo](../results/reproduction/cargo/). For model checkpoints, contact [rizzwanabdullah@gmail.com](mailto:rizzwanabdullah@gmail.com).
 
 ## Supported experiments
 
 - **CARGO (current notebook):** author's training data with overall, Aerial → Ground, Aerial → Aerial and Ground → Ground evaluation; it also records Ground → Aerial as a supplementary reverse-direction result.
 - **LAGPeR (adapter retained):** author's training data and A→G, G→A, G→A+G split files and evaluator. It is not enabled in the current CARGO-only notebook.
-- **G2A-VReID (adapter retained):** a **separate video adaptation experiment**, distinct from the paper's **G2APS-ReID** benchmark. It is not enabled in the current notebook.
+- **G2A-VReID (adapter retained):** a separate video adaptation experiment. It is not enabled in the current notebook.
 
-The G2A parser follows [the official VSLA-CLIP G2A loader](https://github.com/FHR-L/VSLA-CLIP/blob/master/datasets/data_manager.py). G2A-VReID results must not be presented as a reproduction of SeCap's G2APS-ReID table.
+The G2A parser follows [the official VSLA-CLIP G2A loader](https://github.com/FHR-L/VSLA-CLIP/blob/master/datasets/data_manager.py).
 
-Current CARGO defaults are 90 epochs, global batch 64, four images per identity, stride 16, SGD at LR 0.008, cosine decay, AMP, and an evaluation interval of five epochs. The released YAML uses batch 128 and some datasets use stride 12; notebook overrides are saved explicitly. On two GPUs, the author's unchanged triplet mining and BatchNorm operate on 32 images per GPU. This differs from the paper's single-GPU run, so matching its exact metrics is an empirical goal, not a guarantee. Checkpoint selection uses the author's first configured test protocol metric `(Rank-1 + mAP) / 2`; this is test-protocol selection, not an independent validation set.
+Current CARGO defaults use global batch 64, four images per identity, stride 16, SGD at LR 0.008, cosine decay, AMP, and an evaluation interval of five epochs. The released YAML uses batch 128 and some datasets use stride 12; notebook overrides are saved explicitly. On two GPUs, the author's unchanged triplet mining and BatchNorm operate on 32 images per GPU. Checkpoint selection uses the author's first configured test protocol metric `(Rank-1 + mAP) / 2`.
 
 ## Checkpoints and results
 
@@ -27,12 +27,12 @@ Current CARGO defaults are 90 epochs, global batch 64, four images per identity,
 - `model_last.pth`: last completed epoch, full model, optimizer, schedulers, AMP scaler and per-rank RNG states.
 - `model_best.pth`: best evaluated model, with full resumable state; `best-evaluation.json` records its metrics.
 - Latest two `model_epoch_NNNN.pth` files. Older model files are pruned for storage; epoch results remain.
-- `model_final.pth`: written only after epoch 120.
+- `model_final.pth`: written after a configured training run finishes.
 - `progress.json`, `summary.json`, `training.png`.
 
 The root includes exact source, dataset validation, environment freeze, run settings and the pretrained checkpoint hash. Source images and dependency caches stay out of the archive.
 
-A separate private `secap-training-heartbeat` dataset receives lightweight log/progress snapshots every 15 minutes. Private full snapshots go to [secap-reproduction-artifacts](https://www.kaggle.com/datasets/rizwanabdullah05/secap-reproduction-artifacts) hourly and at exit. A hardlink-aware `checkpoints.tar` stores shared checkpoint aliases once. Resume automatically extracts it on Kaggle. The notebook checks archive write access before training; it uses Kagglehub's notebook authentication, with no token in notebook code or datasets.
+A separate private `secap-training-heartbeat` dataset receives lightweight log/progress snapshots every 15 minutes. Private full snapshots go to [secap-reproduction-artifacts](https://www.kaggle.com/datasets/rizwanabdullah05/secap-reproduction-artifacts) hourly and at exit. A hardlink-aware `checkpoints.tar` stores shared checkpoint aliases once. Resume automatically extracts it on Kaggle. The notebook checks archive write access before training; it uses Kagglehub's notebook authentication, with no token in notebook code or datasets. For checkpoint access, contact [rizzwanabdullah@gmail.com](mailto:rizzwanabdullah@gmail.com).
 
 Training stops at a completed epoch within a quota-aware budget (at most eight hours, with one GPU hour reserved for archiving) to allow archiving before Kaggle's session limit. Run All again to restore the last epoch and continue, skipping completed experiments. Keep batch size, stride and evaluation interval unchanged when resuming; choose a new archive slug for a different experiment. Restoring optimizer/scheduler/scaler/RNG state supports continuation, but sampler/worker prefetch does not permit a claim of bitwise-identical continuation.
 
@@ -57,7 +57,7 @@ uv run python kaggle/watch.py
 uv run python kaggle/session_tools.py logs --seconds 10
 ```
 
-Once every experiment reaches epoch 120, the watcher fetches final plots, reports, configs and the completed best/last model files into ignored `results/kaggle/`. Intermediate images/checkpoints are not downloaded locally. Full artifacts remain on Kaggle.
+Once an experiment finishes, the watcher fetches final plots, reports, configs and the completed best/last model files into ignored `results/kaggle/`. Intermediate images/checkpoints are not downloaded locally. Full artifacts remain on Kaggle.
 
 ## Validation
 

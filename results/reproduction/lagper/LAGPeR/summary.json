@@ -1,0 +1,83 @@
+{
+  "dataset": "LAGPeR",
+  "progress": {
+    "epoch": 90,
+    "max_epoch": 120,
+    "best_metric": 35.40245592594147,
+    "best_epoch": 80,
+    "complete": false,
+    "budget_stop": true,
+    "checkpoint": "model_last.pth",
+    "time": 1794029107.43187
+  },
+  "last_evaluation": {
+    "epoch": 90,
+    "iteration": 57330,
+    "metrics": {
+      "cls_accuracy": 1.0,
+      "data_time": 0.0032954199996311218,
+      "total_loss": 0.09936783484590705,
+      "loss_cls_id": 0.040561120957136154,
+      "loss_cls_local": 0.039219412952661514,
+      "loss_cls_view": 0.0006693684263154864,
+      "loss_triplet_id": 0.013066472136415541,
+      "loss_triplet_local": 0.004907306734821759,
+      "loss_oreg": 0.0009441536385565996,
+      "lr": 0.0012449871285101584,
+      "time": 0.3620058480009902,
+      "eta_seconds": 6986.952320375276,
+      "LAGPeR_A2G/Rank-1": 40.05252718925476,
+      "LAGPeR_A2G/Rank-5": 54.95731830596924,
+      "LAGPeR_A2G/Rank-10": 61.588966846466064,
+      "LAGPeR_A2G/mAP": 29.062607884407043,
+      "LAGPeR_A2G/mINP": 11.250384151935577,
+      "LAGPeR_A2G/metric": 34.55756902694702,
+      "LAGPeR_G2A/Rank-1": 33.51936936378479,
+      "LAGPeR_G2A/Rank-5": 48.03020358085632,
+      "LAGPeR_G2A/Rank-10": 55.384111404418945,
+      "LAGPeR_G2A/mAP": 32.49529302120209,
+      "LAGPeR_G2A/mINP": 23.5238254070282,
+      "LAGPeR_G2A/metric": 33.00732970237732,
+      "LAGPeR_G2AG/Rank-1": 20.288904011249542,
+      "LAGPeR_G2AG/Rank-5": 32.40315020084381,
+      "LAGPeR_G2AG/Rank-10": 39.75705802440643,
+      "LAGPeR_G2AG/mAP": 16.74647033214569,
+      "LAGPeR_G2AG/mINP": 6.70010969042778,
+      "LAGPeR_G2AG/metric": 18.517687916755676,
+      "epoch_mean/total_loss": 0.13030468432452477,
+      "epoch_mean/loss_cls_id": 0.05391546583104311,
+      "epoch_mean/loss_cls_local": 0.04681058585778276,
+      "epoch_mean/loss_cls_view": 0.0006671539800489406,
+      "epoch_mean/loss_triplet_id": 0.01735094847995806,
+      "epoch_mean/loss_triplet_local": 0.010616775764794749,
+      "epoch_mean/loss_oreg": 0.0009437544108971549
+    },
+    "evaluation": {
+      "LAGPeR_A2G": {
+        "Rank-1": 40.05252718925476,
+        "Rank-5": 54.95731830596924,
+        "Rank-10": 61.588966846466064,
+        "mAP": 29.062607884407043,
+        "mINP": 11.250384151935577,
+        "metric": 34.55756902694702
+      },
+      "LAGPeR_G2A": {
+        "Rank-1": 33.51936936378479,
+        "Rank-5": 48.03020358085632,
+        "Rank-10": 55.384111404418945,
+        "mAP": 32.49529302120209,
+        "mINP": 23.5238254070282,
+        "metric": 33.00732970237732
+      },
+      "LAGPeR_G2AG": {
+        "Rank-1": 20.288904011249542,
+        "Rank-5": 32.40315020084381,
+        "Rank-10": 39.75705802440643,
+        "mAP": 16.74647033214569,
+        "mINP": 6.70010969042778,
+        "metric": 18.517687916755676
+      }
+    },
+    "time": 1794029107.431537
+  }
+}
