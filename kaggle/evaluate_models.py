@@ -41,8 +41,27 @@ PRIMARY = {'CARGO': 'CARGO_AG', 'LAGPeR': 'LAGPeR_A2G'}
 
 
 def archive_root(handle):
-    import kagglehub
-    root = Path(kagglehub.dataset_download(handle))
+    """Locate the private artifacts input already attached to this kernel.
+
+    Kaggle mounts private datasets below ``/kaggle/input``.  Searching the
+    shallow directory structure avoids a Python-version-dependent client
+    package in the repository's Python 3.10 environment.
+    """
+    root = None
+    skip = {'bounding_box_train', 'bounding_box_test_aerial',
+            'bounding_box_test_ground', 'query_aerial', 'query_ground',
+            'bounding_box_gallery', 'bbox_train', 'bbox_test', 'train',
+            'query', 'gallery'}
+    for current, dirs, _ in os.walk('/kaggle/input'):
+        candidate = Path(current)
+        if (candidate / 'checkpoints').is_dir() or (candidate / 'checkpoints.tar').is_file():
+            root = candidate
+            break
+        dirs[:] = [d for d in dirs if d not in skip]
+    if root is None:
+        raise FileNotFoundError(
+            f'Could not find archived checkpoints under /kaggle/input; expected attached dataset {handle!r}.')
+    print('SECAP_EVAL_ARCHIVE_ROOT', root, flush=True)
     # Kaggle normally expands tar files, but make the notebook portable.
     if not (root / 'checkpoints').exists() and (root / 'checkpoints.tar').exists():
         target = Path('/tmp/secap-eval-archive')

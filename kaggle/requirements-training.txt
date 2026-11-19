@@ -20,4 +20,3 @@ mat4py==0.6.0
 pandas==2.2.3
 h5py==3.12.1
 imageio==2.36.0
-kagglehub==1.0.3
