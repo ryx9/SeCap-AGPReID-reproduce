@@ -26,7 +26,7 @@ from PIL import Image
 import torch
 import torch.nn.functional as F
 
-from fastreid.checkpoint import Checkpointer
+from fastreid.utils.checkpoint import Checkpointer
 from fastreid.config import get_cfg
 from fastreid.data import build_reid_test_loader
 from fastreid.engine import DefaultTrainer
