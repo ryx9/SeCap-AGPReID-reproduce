@@ -1,0 +1,17 @@
+{
+  "id": "rizwanabdullah05/secap-evaluation-visual-report",
+  "title": "SeCap Evaluation Visual Report",
+  "code_file": "secap_evaluation_report.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "machine_shape": "standard",
+  "dataset_sources": [
+    "rizwanabdullah05/secap-comprehensive-evaluation-results"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
