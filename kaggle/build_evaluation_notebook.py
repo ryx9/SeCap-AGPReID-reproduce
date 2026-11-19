@@ -28,7 +28,7 @@ cells = [
 from pathlib import Path
 payload = base64.b64decode({encoded!r})
 assert hashlib.sha256(payload).hexdigest() == {digest!r}
-repo = Path('/tmp/secap-eval-source'); repo.mkdir(exist_ok=True)
+repo = Path('/tmp/secap-source'); repo.mkdir(exist_ok=True)
 with tarfile.open(fileobj=io.BytesIO(payload)) as bundle:
     bundle.extractall(repo, filter='data')
 namespace = {{'__name__': 'secap_eval_runtime'}}
