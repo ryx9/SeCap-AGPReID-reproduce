@@ -7,7 +7,15 @@ import argparse
 import json
 import os
 from pathlib import Path
+import sys
 import tarfile
+
+# The notebook invokes this file as ``python kaggle/evaluate_models.py``.
+# In that form Python adds ``.../kaggle`` (rather than the repository root)
+# to sys.path, so make the bundled FastReID package explicitly importable.
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 os.environ['MPLBACKEND'] = 'Agg'
 import matplotlib
