@@ -78,22 +78,19 @@ def prepare_data():
             raise RuntimeError(f'No training images at {train_path}')
         report[name] = dict(source=str(source), train_images=len(train_files))
         if name == 'LAGPeR':
-            entries = {}
-            def mounted_file_exists(relative):
-                path = target / relative
-                if path.parent not in entries:
-                    try:
-                        entries[path.parent] = set(os.listdir(path.parent))
-                    except FileNotFoundError:
-                        entries[path.parent] = set()
-                return path.name in entries[path.parent]
             for split in ['exp3_A2G+.txt', 'exp4_G2A+.txt', 'exp5_G2A+G.txt']:
                 lines = (target / split).read_text().splitlines()
                 print('SECAP_VALIDATE_SPLIT', split, len(lines), flush=True)
-                missing = [s for s in lines if not mounted_file_exists(s)]
+                # Checking every image requires thousands of network-backed
+                # directory listings on Kaggle's mounted filesystem. Validate
+                # the canonical split plus deterministic coverage samples;
+                # the evaluator will load every referenced image afterwards.
+                sample_idx = sorted({0, len(lines) // 4, len(lines) // 2,
+                                     (3 * len(lines)) // 4, len(lines) - 1})
+                missing = [lines[i] for i in sample_idx if not (target / lines[i]).is_file()]
                 if missing:
-                    raise RuntimeError(f'{split}: {len(missing)} referenced files missing; first={missing[:3]}')
-                report[name][split] = len(lines)
+                    raise RuntimeError(f'{split}: sampled referenced files missing; first={missing[:3]}')
+                report[name][split] = dict(entries=len(lines), sampled_files=len(sample_idx))
     g2a = roots['G2AVReID']
     if len(g2a) != 1:
         raise RuntimeError(f'Expected one G2A-VReID root, found {g2a}')
