@@ -5,9 +5,11 @@ reports and contact sheets in /kaggle/working, never in the input datasets.
 """
 import argparse
 import json
+import os
 from pathlib import Path
 import tarfile
 
+os.environ['MPLBACKEND'] = 'Agg'
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
