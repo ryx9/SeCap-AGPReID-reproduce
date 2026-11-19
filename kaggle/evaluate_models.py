@@ -84,6 +84,9 @@ def cfg_for(root, source, target):
     cfg.TEST.IMS_PER_BATCH = 64
     cfg.DATALOADER.NUM_WORKERS = 2
     cfg.MODEL.DEVICE = 'cuda'
+    # A complete trained checkpoint is loaded immediately afterwards.  Do not
+    # require the training-time ImageNet bootstrap file on this fresh kernel.
+    cfg.MODEL.BACKBONE.PRETRAIN = False
     cfg.freeze()
     return cfg
 
