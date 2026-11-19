@@ -111,7 +111,17 @@ def metrics_and_rows(feats, pids, cams, paths, num_query):
 
 
 def select_distinct(rows, mode, count=30):
-    ordered = sorted(rows, key=lambda x: (-x['rank'], x['ap'])) if mode == 'worst' else sorted(rows, key=lambda x: (x['pid'], x['query']))
+    if mode == 'random':
+        # One reproducibly sampled query for each sampled identity.  Keeping
+        # the seed fixed makes the visual audit comparable across reruns.
+        by_pid = {}
+        for row in rows:
+            by_pid.setdefault(row['pid'], []).append(row)
+        rng = np.random.default_rng(20251119)
+        pids = sorted(by_pid)
+        rng.shuffle(pids)
+        return [by_pid[pid][int(rng.integers(len(by_pid[pid])))] for pid in pids[:count]]
+    ordered = sorted(rows, key=lambda x: (-x['rank'], x['ap']))
     chosen, seen = [], set()
     for row in ordered:
         if row['pid'] not in seen:
