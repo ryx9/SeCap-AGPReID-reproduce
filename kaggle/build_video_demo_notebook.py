@@ -18,7 +18,7 @@ ns={{'__name__':'runtime'}}; exec(compile((repo/'kaggle/runtime.py').read_text()
 ns['REPO']=repo; ns['ART']=Path('/kaggle/working/secap-video-runtime'); ns['ART'].mkdir(exist_ok=True)
 py=ns['install_environment'](); ns['run']([str(Path(py).parent.parent/'bin/uv') if False else 'uv','pip','install','--python',py,'ultralytics==8.3.0'])
 roots=list(Path('/kaggle/input').rglob('checkpoints/CARGO/model_best.pth')); assert roots, 'Attach secap-reproduction-artifacts'
-archive=roots[0].parents[1]; video=Path('/kaggle/working/people-detection.mp4')
+archive=roots[0].parents[2]; video=Path('/kaggle/working/people-detection.mp4')
 urllib.request.urlretrieve('https://github.com/intel-iot-devkit/sample-videos/raw/master/people-detection.mp4',video)
 out=Path('/kaggle/working/secap_video_demo'); out.mkdir(exist_ok=True)
 ns['run']([py,'video_demo/run_video_reid.py','--input',video,'--output',out/'annotated_secap_reid.mp4','--config',archive/'CARGO/config.yaml','--checkpoint',archive/'checkpoints/CARGO/model_best.pth','--csv',out/'track_reid_stats.csv'],cwd=repo)

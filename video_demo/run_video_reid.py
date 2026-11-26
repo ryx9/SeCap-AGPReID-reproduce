@@ -3,8 +3,9 @@
 Track IDs are temporal tracker identities.  They are not claims about a
 person's real-world identity unless a labelled enrollment gallery is supplied.
 """
-import argparse, csv, json, time
+import argparse, csv, json, os, time
 from pathlib import Path
+os.environ['MPLBACKEND'] = 'Agg'
 import cv2, numpy as np, torch
 import torch.nn.functional as F
 
