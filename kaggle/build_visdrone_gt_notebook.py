@@ -13,7 +13,14 @@ from pathlib import Path
 p=base64.b64decode({e!r});assert hashlib.sha256(p).hexdigest()=={h!r};repo=Path('/tmp/secap-gt');repo.mkdir(exist_ok=True)
 with tarfile.open(fileobj=io.BytesIO(p)) as z:z.extractall(repo,filter='data')
 ns={{'__name__':'runtime'}};exec(compile((repo/'kaggle/runtime.py').read_text(),'runtime.py','exec'),ns);ns['REPO']=repo;ns['ART']=Path('/kaggle/working/runtime');ns['ART'].mkdir(exist_ok=True);py=ns['install_environment']();ns['run'](['uv','pip','install','--python',py,'ultralytics==8.3.0','lapx==0.5.11'])
-seq=next(Path('/kaggle/input').rglob('uav0000305_00000_v'));ann=next(Path('/kaggle/input').rglob('uav0000305_00000_v.txt'));video=Path('/kaggle/working/visdrone305.mp4');ns['run'](['ffmpeg','-y','-framerate','20','-i',seq/'%07d.jpg','-vf','scale=trunc(iw/2)*2:trunc(ih/2)*2','-c:v','libx264','-pix_fmt','yuv420p',video]);weights=Path('/kaggle/working/visdrone_yolov8n_1280.pt');urllib.request.urlretrieve('https://raw.githubusercontent.com/baturalpoz06/aerial-object-detection-yolov8/main/visdrone_yolov8n_1280.pt',weights)
+anns=list(Path('/kaggle/input').rglob('annotations/*.txt')); candidates=[]
+for candidate in anns:
+    labels=[line.split(',') for line in candidate.read_text().splitlines()]
+    people=sum(int(x[7]) in (1,2) for x in labels); other=sum(int(x[7]) in range(3,11) for x in labels)
+    frames=max((int(x[0]) for x in labels),default=0)
+    if people>=100 and frames>=100: candidates.append((people/(other+1),people,frames,candidate))
+_,people_count,frames,ann=max(candidates); seq=next(Path('/kaggle/input').rglob('sequences/'+ann.stem)); print('SECAP_SELECTED_HUMAN_SEQUENCE',ann.stem,people_count,frames)
+video=Path('/kaggle/working/visdrone_human.mp4');ns['run'](['ffmpeg','-y','-framerate','20','-i',seq/'%07d.jpg','-vf','scale=trunc(iw/2)*2:trunc(ih/2)*2','-c:v','libx264','-pix_fmt','yuv420p',video]);weights=Path('/kaggle/working/visdrone_yolov8n_1280.pt');urllib.request.urlretrieve('https://raw.githubusercontent.com/baturalpoz06/aerial-object-detection-yolov8/main/visdrone_yolov8n_1280.pt',weights)
 ck=next(Path('/kaggle/input').rglob('checkpoints/CARGO/model_best.pth'));root=ck.parents[2];out=Path('/kaggle/working/secap_visdrone_gt');out.mkdir(exist_ok=True);ns['run']([py,'video_demo/run_video_reid.py','--input',video,'--output',out/'annotated_visdrone.mp4','--config',root/'CARGO/config.yaml','--checkpoint',ck,'--csv',out/'track_reid.csv','--detector',weights,'--person-classes','0,1','--imgsz','1280','--conf','.15'],cwd=repo);ns['run']([py,'video_demo/evaluate_visdrone_gt.py','--annotations',ann,'--csv',out/'track_reid.csv','--out',out/'ground_truth_metrics.json'],cwd=repo)
 '''
 def c(t,s):return {'cell_type':t,'metadata':{},'source':s.splitlines(keepends=True),**({'execution_count':None,'outputs':[]} if t=='code' else {})}
