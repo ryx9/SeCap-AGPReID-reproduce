@@ -124,7 +124,10 @@ def metrics_and_rows(feats, pids, cams, paths, num_query):
         if not len(correct):
             continue
         rank = int(correct[0]) + 1
-        wrong = int(keep[0])
+        # `keep[0]` can itself be the correct identity.  It is valid for
+        # ranking but must never be displayed as the "top incorrect" image.
+        wrong_candidates = keep[gp[keep] != qp[i]]
+        wrong = int(wrong_candidates[0]) if len(wrong_candidates) else int(keep[0])
         true = int(keep[correct[0]])
         rows.append(dict(query_index=i, pid=int(qp[i]), rank=rank, ap=float(aps[len(rows)]),
                          query=paths[i], wrong=paths[num_query + wrong], true=paths[num_query + true],
