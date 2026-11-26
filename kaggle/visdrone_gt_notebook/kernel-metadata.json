@@ -9,7 +9,8 @@
   "enable_internet": true,
   "machine_shape": "NvidiaTeslaT4",
   "dataset_sources": [
-    "rizwanabdullah05/secap-reproduction-artifacts"
+    "rizwanabdullah05/secap-reproduction-artifacts",
+    "nandhanivasmalasani/visdrone2019-mot-val"
   ],
   "competition_sources": [],
   "kernel_sources": [],
