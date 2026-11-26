@@ -1,0 +1,17 @@
+{
+  "id": "rizwanabdullah05/secap-visdrone-groundtruth-video",
+  "title": "SeCap VisDrone Ground Truth Video",
+  "code_file": "secap_visdrone_gt.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "rizwanabdullah05/secap-reproduction-artifacts"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
