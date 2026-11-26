@@ -29,15 +29,15 @@ def feature(model, image, size):
 
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--input',required=True); p.add_argument('--output',required=True); p.add_argument('--config',required=True); p.add_argument('--checkpoint',required=True); p.add_argument('--csv',required=True); p.add_argument('--conf',type=float,default=.25); args=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--input',required=True); p.add_argument('--output',required=True); p.add_argument('--config',required=True); p.add_argument('--checkpoint',required=True); p.add_argument('--csv',required=True); p.add_argument('--detector',default='yolo11n.pt'); p.add_argument('--person-classes',default='0'); p.add_argument('--imgsz',type=int,default=640); p.add_argument('--conf',type=float,default=.25); args=p.parse_args()
     from ultralytics import YOLO
-    reid,cfg=load_reid(args.config,args.checkpoint); detector=YOLO('yolo11n.pt')
+    reid,cfg=load_reid(args.config,args.checkpoint); detector=YOLO(args.detector); person_classes=[int(x) for x in args.person_classes.split(',')]
     cap=cv2.VideoCapture(args.input); fps=cap.get(cv2.CAP_PROP_FPS) or 30; w,h=int(cap.get(3)),int(cap.get(4))
     out=cv2.VideoWriter(args.output,cv2.VideoWriter_fourcc(*'mp4v'),fps,(w,h)); refs={}; seen=set(); frame=0; ema=0.; rows=[]
     while True:
         ok,img=cap.read()
         if not ok: break
-        started=time.perf_counter(); result=detector.track(img,persist=True,classes=[0],conf=args.conf,verbose=False)[0]
+        started=time.perf_counter(); result=detector.track(img,persist=True,classes=person_classes,imgsz=args.imgsz,conf=args.conf,verbose=False)[0]
         detections=0
         if result.boxes is not None and result.boxes.id is not None:
             xyxy=result.boxes.xyxy.cpu().numpy().astype(int); ids=result.boxes.id.cpu().numpy().astype(int); conf=result.boxes.conf.cpu().numpy()
