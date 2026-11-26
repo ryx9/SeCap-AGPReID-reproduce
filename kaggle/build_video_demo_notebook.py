@@ -16,7 +16,7 @@ repo=Path('/tmp/secap-video'); repo.mkdir(exist_ok=True)
 with tarfile.open(fileobj=io.BytesIO(p)) as z: z.extractall(repo,filter='data')
 ns={{'__name__':'runtime'}}; exec(compile((repo/'kaggle/runtime.py').read_text(),'runtime.py','exec'),ns)
 ns['REPO']=repo; ns['ART']=Path('/kaggle/working/secap-video-runtime'); ns['ART'].mkdir(exist_ok=True)
-py=ns['install_environment'](); ns['run']([str(Path(py).parent.parent/'bin/uv') if False else 'uv','pip','install','--python',py,'ultralytics==8.3.0'])
+py=ns['install_environment'](); ns['run'](['uv','pip','install','--python',py,'ultralytics==8.3.0','lapx==0.5.11'])
 roots=list(Path('/kaggle/input').rglob('checkpoints/CARGO/model_best.pth')); assert roots, 'Attach secap-reproduction-artifacts'
 archive=roots[0].parents[2]; video=Path('/kaggle/working/people-detection.mp4')
 urllib.request.urlretrieve('https://github.com/intel-iot-devkit/sample-videos/raw/master/people-detection.mp4',video)
