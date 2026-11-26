@@ -8,7 +8,7 @@ with tarfile.open(fileobj=b,mode='w:gz') as d:
    if not m.name.endswith(('.so','.pyc','.c')):d.addfile(m,s.extractfile(m) if m.isfile() else None)
  for x in ['kaggle/runtime.py','kaggle/requirements-training.txt','video_demo/run_video_reid.py','video_demo/evaluate_visdrone_gt.py']:d.add(R/x,arcname=x)
 p=b.getvalue(); e=base64.b64encode(p).decode(); h=hashlib.sha256(p).hexdigest()
-code=f'''import base64,hashlib,io,tarfile,subprocess
+code=f'''import base64,hashlib,io,tarfile,subprocess,urllib.request
 from pathlib import Path
 p=base64.b64decode({e!r});assert hashlib.sha256(p).hexdigest()=={h!r};repo=Path('/tmp/secap-gt');repo.mkdir(exist_ok=True)
 with tarfile.open(fileobj=io.BytesIO(p)) as z:z.extractall(repo,filter='data')
