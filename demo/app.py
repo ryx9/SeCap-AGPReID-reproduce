@@ -114,7 +114,7 @@ def draw(frame,hits,start,n):
 def process(i,live=False):
  import cv2
  j=job(i);j['status']='running';src=int(j['source']) if live and j['source'].isdigit() else j['source'];cap=cv2.VideoCapture(src)
- if not cap.isOpened():j.update(status='failed',error=f'Cannot open source: {src}');return
+ if not cap.isOpened():j.update(status='failed',error=f'Cannot open source: {src}');j['stop'].set();return
  fps=cap.get(cv2.CAP_PROP_FPS) or 25;w,h=int(cap.get(3)),int(cap.get(4));total=int(cap.get(cv2.CAP_PROP_FRAME_COUNT));writer=None
  if not live:
   target=OUT/'videos'/f'{i}.mp4';target.parent.mkdir(parents=True,exist_ok=True);writer=cv2.VideoWriter(str(target),cv2.VideoWriter_fourcc(*'mp4v'),fps,(w,h));j['output']=str(target)
@@ -133,7 +133,8 @@ def process(i,live=False):
     ok,buf=cv2.imencode('.jpg',frame,[cv2.IMWRITE_JPEG_QUALITY,85]);j['jpeg']=buf.tobytes() if ok else None
    else:writer.write(frame)
   j['status']='stopped' if j['stop'].is_set() else 'complete'
- except Exception as e:traceback.print_exc();j.update(status='failed',error=str(e))
+ except Exception as e:
+  traceback.print_exc();j.update(status='failed',error=str(e));j['stop'].set()
  finally:
   cap.release()
   if writer:writer.release()
@@ -160,7 +161,7 @@ class App(SimpleHTTPRequestHandler):
     cap.release()
    return self.reply(200,{'cameras':found,'note':'Attached webcams are detected automatically. Add RTSP URLs manually.'})
   if u.path=='/api/job':
-   j=job(q.get('id',[''])[0]);return self.reply(200,{k:v for k,v in j.items() if k not in ('stop','jpeg')} if j else {'error':'Unknown job'})
+   j=job(q.get('id',[''])[0]);return self.reply(200,{k:v for k,v in j.items() if k not in ('stop','jpeg','tracks')} if j else {'error':'Unknown job'})
   if u.path.startswith('/api/download/'):
    j=job(u.path.rsplit('/',1)[-1]);p=Path(j.get('output','')) if j else None
    if not p or not p.is_file():return self.reply(404,{'error':'Output is not ready.'})
@@ -169,7 +170,7 @@ class App(SimpleHTTPRequestHandler):
    j=job(u.path.split('/')[3]);
    if not j:return self.reply(404,{'error':'Unknown camera.'})
    self.send_response(200);self.send_header('Content-Type','multipart/x-mixed-replace; boundary=f');self.end_headers()
-   while not j['stop'].is_set():
+   while not j['stop'].is_set() and j.get('status') in ('queued','running'):
     if j.get('jpeg'):
      self.wfile.write(b'--f\r\nContent-Type: image/jpeg\r\n\r\n'+j['jpeg']+b'\r\n');self.wfile.flush()
     time.sleep(.08)
