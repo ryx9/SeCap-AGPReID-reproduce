@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Local SeCap app: gallery retrieval, annotated video, and live cameras."""
-import argparse, io, json, re, secrets, shutil, threading, time, traceback
+import argparse, io, json, re, secrets, shutil, sys, threading, time, traceback
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -13,6 +13,7 @@ class ReID:
  def load(self):
   if self.model:return
   if not self.cfg_path.is_file() or not self.ck.is_file(): raise RuntimeError('Missing model artifacts. Run `uv run python demo/setup_artifacts.py`.')
+  if str(ROOT) not in sys.path: sys.path.insert(0,str(ROOT))
   import numpy as np,torch
   from PIL import Image
   from fastreid.config import get_cfg
