@@ -89,10 +89,26 @@ def recognize(frame,gallery,model):
  for (box,conf),emb in zip(keep,reid.embed(crops)):
   scores=(emb.unsqueeze(0)@feat.T).squeeze();i=int(reid.torch.argmax(scores));out.append((box,files[i],float(scores[i])))
  return out
+def footage_reid(frame,model,state):
+ """Assign persistent local identities from this footage; no gallery required."""
+ reid=MODELS[model];boxes=DETECTOR.run(frame);crops=[];keep=[];h,w=frame.shape[:2]
+ for (x1,y1,x2,y2),conf in boxes:
+  x1,y1,x2,y2=max(0,x1),max(0,y1),min(w,x2),min(h,y2);crop=frame[y1:y2,x1:x2]
+  if crop.size:crops.append(crop);keep.append((x1,y1,x2,y2))
+ if not crops:return []
+ output=[]
+ for box,emb in zip(keep,reid.embed(crops)):
+  if state['refs']:
+   scores=reid.torch.stack(state['refs'])@emb;best=int(reid.torch.argmax(scores));score=float(scores[best])
+  else: best,score=-1,-1.0
+  if score < .55:
+   state['refs'].append(emb);best=len(state['refs'])-1;score=1.0
+  output.append((box,f'Person {best+1}',score))
+ return output
 def draw(frame,hits,start,n):
  import cv2
  for (x1,y1,x2,y2),p,s in hits:
-  col=(0,210,0) if s>=.55 else (0,165,255);cv2.rectangle(frame,(x1,y1),(x2,y2),col,2);cv2.putText(frame,f'{p.parent.name} {s:.2f}',(x1,max(18,y1-5)),cv2.FONT_HERSHEY_SIMPLEX,.5,col,2)
+  col=(0,210,0) if s>=.55 else (0,165,255);cv2.rectangle(frame,(x1,y1),(x2,y2),col,2);cv2.putText(frame,f'{p} | ReID {s:.2f}',(x1,max(18,y1-5)),cv2.FONT_HERSHEY_SIMPLEX,.5,col,2)
  cv2.rectangle(frame,(8,8),(520,67),(0,0,0),-1);cv2.putText(frame,f'SeCap ReID | people {len(hits)} | FPS {n/max(time.time()-start,.001):.1f}',(18,35),cv2.FONT_HERSHEY_SIMPLEX,.6,(255,255,255),2);cv2.putText(frame,'label = best gallery identity / cosine similarity',(18,58),cv2.FONT_HERSHEY_SIMPLEX,.43,(220,220,220),1)
 def process(i,live=False):
  import cv2
@@ -106,7 +122,7 @@ def process(i,live=False):
   while not j['stop'].is_set():
    ok,frame=cap.read()
    if not ok:break
-   hit=recognize(frame,j['gallery'],j['model']);draw(frame,hit,start,n+1);n+=1;j['progress']=f'{n}/{total or "?"} frames'
+   hit=footage_reid(frame,j['model'],j['tracks']);draw(frame,hit,start,n+1);n+=1;j['progress']=f'{n}/{total or "?"} frames'
    if live:
     ok,buf=cv2.imencode('.jpg',frame,[cv2.IMWRITE_JPEG_QUALITY,85]);j['jpeg']=buf.tobytes() if ok else None
    else:writer.write(frame)
@@ -164,12 +180,12 @@ class App(SimpleHTTPRequestHandler):
      s=(e@feat.T).squeeze();idx=reid.torch.argsort(s,descending=True)[:10].tolist();r.append({'query':str(p),'matches':[{'path':str(files[x]),'score':round(float(s[x]),4)} for x in idx]})
     return self.reply(200,{'gallery_images':len(files),'results':r})
    if self.path in ('/api/video','/api/live'):
-    sources=[x.strip() for x in f.get('sources',f.get('source',b'')).decode().splitlines() if x.strip()];gallery=f.get('gallery_path',b'').decode();model=f.get('model',b'cargo').decode().lower()
+    sources=[x.strip() for x in f.get('sources',f.get('source',b'')).decode().splitlines() if x.strip()];model=f.get('model',b'cargo').decode().lower()
     if model not in MODELS:raise ValueError('Choose CARGO or LAGPeR.')
     if not sources:raise ValueError('Provide a video path or one camera source per line.')
     ids=[]
     for src in sources:
-     i=new_job(source=src,gallery=gallery,model=model,kind='live' if self.path.endswith('live') else 'video');ids.append(i);threading.Thread(target=process,args=(i,self.path.endswith('live')),daemon=True).start()
+     i=new_job(source=src,model=model,tracks={'refs':[]},kind='live' if self.path.endswith('live') else 'video');ids.append(i);threading.Thread(target=process,args=(i,self.path.endswith('live')),daemon=True).start()
     return self.reply(202,{'ids':ids})
    if self.path=='/api/stop':
     j=job(f.get('id',b'').decode());j['stop'].set() if j else None;return self.reply(200,{'stopped':bool(j)})
