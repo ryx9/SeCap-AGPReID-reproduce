@@ -7,3 +7,8 @@ kaggle/probe/
 results/kaggle/
 /archive/
 /archive.zip
+/artifacts/archives/
+/results/raw/
+/results/video-demos/**/*.csv
+demo/artifacts/
+demo/.venv/

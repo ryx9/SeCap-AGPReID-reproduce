@@ -1,0 +1,30 @@
+{
+  "source": "/kaggle/input/datasets/tusharbadlani0/mars-reid-data/bbox_test/bbox_test",
+  "identities": 60,
+  "models": [
+    {
+      "model": "CARGO",
+      "benchmark": "MARS labelled cross-camera tracklets",
+      "num_queries": 60,
+      "rank1": 51.66666666666667,
+      "mAP": 66.6972286972287,
+      "shown_pid": "0106",
+      "shown_rank": 33,
+      "shown_correct": false,
+      "query_camera": "1",
+      "gallery_camera": "2"
+    },
+    {
+      "model": "LAGPeR",
+      "benchmark": "MARS labelled cross-camera tracklets",
+      "num_queries": 60,
+      "rank1": 73.33333333333333,
+      "mAP": 81.2176797922234,
+      "shown_pid": "0078",
+      "shown_rank": 29,
+      "shown_correct": false,
+      "query_camera": "1",
+      "gallery_camera": "2"
+    }
+  ]
+}
