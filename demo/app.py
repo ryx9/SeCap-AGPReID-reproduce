@@ -36,7 +36,7 @@ class ReID:
   return out
 
 class Gallery:
- def __init__(self):self.cache={};self.lock=threading.Lock()
+ def __init__(self,reid):self.reid,self.cache,self.lock=reid,{},threading.Lock()
  def get(self,raw,limit=2000):
   root=Path(raw).expanduser().resolve()
   if not root.exists():raise ValueError(f'Gallery does not exist: {root}')
@@ -45,7 +45,7 @@ class Gallery:
   key=(str(root),len(files),max(x.stat().st_mtime_ns for x in files))
   with self.lock:
    if key not in self.cache:
-    pairs=REID.paths(files);self.cache={key:([x[0] for x in pairs],REID.torch.stack([x[1] for x in pairs]))}
+    pairs=self.reid.paths(files);self.cache={key:([x[0] for x in pairs],self.reid.torch.stack([x[1] for x in pairs]))}
    return self.cache[key]
 
 class Detector:
@@ -78,16 +78,16 @@ def fields(body,ctype):
   if n and sep:ans[n.group(1).decode()]=v.rstrip(b'\r\n')
  return ans
 
-def recognize(frame,gallery):
+def recognize(frame,gallery,model):
  import cv2
- files,feat=GALLERY.get(gallery);boxes=DETECTOR.run(frame);crops=[];keep=[];h,w=frame.shape[:2]
+ reid=MODELS[model];files,feat=GALLERIES[model].get(gallery);boxes=DETECTOR.run(frame);crops=[];keep=[];h,w=frame.shape[:2]
  for (x1,y1,x2,y2),conf in boxes:
   x1,y1,x2,y2=max(0,x1),max(0,y1),min(w,x2),min(h,y2);crop=frame[y1:y2,x1:x2]
   if crop.size:crops.append(crop);keep.append(((x1,y1,x2,y2),conf))
  if not crops:return []
  out=[]
- for (box,conf),emb in zip(keep,REID.embed(crops)):
-  scores=(emb.unsqueeze(0)@feat.T).squeeze();i=int(REID.torch.argmax(scores));out.append((box,files[i],float(scores[i])))
+ for (box,conf),emb in zip(keep,reid.embed(crops)):
+  scores=(emb.unsqueeze(0)@feat.T).squeeze();i=int(reid.torch.argmax(scores));out.append((box,files[i],float(scores[i])))
  return out
 def draw(frame,hits,start,n):
  import cv2
@@ -106,7 +106,7 @@ def process(i,live=False):
   while not j['stop'].is_set():
    ok,frame=cap.read()
    if not ok:break
-   hit=recognize(frame,j['gallery']);draw(frame,hit,start,n+1);n+=1;j['progress']=f'{n}/{total or "?"} frames'
+   hit=recognize(frame,j['gallery'],j['model']);draw(frame,hit,start,n+1);n+=1;j['progress']=f'{n}/{total or "?"} frames'
    if live:
     ok,buf=cv2.imencode('.jpg',frame,[cv2.IMWRITE_JPEG_QUALITY,85]);j['jpeg']=buf.tobytes() if ok else None
    else:writer.write(frame)
@@ -126,7 +126,17 @@ class App(SimpleHTTPRequestHandler):
   return fields(self.rfile.read(n),self.headers.get('Content-Type'))
  def do_GET(self):
   u=urlparse(self.path);q=parse_qs(u.query)
-  if u.path=='/api/health':return self.reply(200,{'checkpoint':str(REID.ck),'loaded':bool(REID.model)})
+  if u.path=='/api/health':return self.reply(200,{'models':{k:{'checkpoint':str(v.ck),'loaded':bool(v.model)} for k,v in MODELS.items()}})
+  if u.path=='/api/cameras':
+   import cv2
+   found=[]
+   for index in range(8):
+    cap=cv2.VideoCapture(index)
+    if cap.isOpened():
+     ok,_=cap.read()
+     if ok:found.append({'source':str(index),'name':f'Local webcam {index}'})
+    cap.release()
+   return self.reply(200,{'cameras':found,'note':'Attached webcams are detected automatically. Add RTSP URLs manually.'})
   if u.path=='/api/job':
    j=job(q.get('id',[''])[0]);return self.reply(200,{k:v for k,v in j.items() if k not in ('stop','jpeg')} if j else {'error':'Unknown job'})
   if u.path.startswith('/api/download/'):
@@ -147,16 +157,19 @@ class App(SimpleHTTPRequestHandler):
   try:
    f=self.form()
    if self.path=='/api/search':
-    qs=images(f.get('query_path',b'').decode());files,feat=GALLERY.get(f.get('gallery_path',b'').decode(),int(f.get('max_gallery',b'2000')));r=[]
-    for p,e in REID.paths(qs):
-     s=(e@feat.T).squeeze();idx=REID.torch.argsort(s,descending=True)[:10].tolist();r.append({'query':str(p),'matches':[{'path':str(files[x]),'score':round(float(s[x]),4)} for x in idx]})
+    name=f.get('model',b'cargo').decode().lower();reid=MODELS.get(name)
+    if not reid:raise ValueError('Choose CARGO or LAGPeR.')
+    qs=images(f.get('query_path',b'').decode());files,feat=GALLERIES[name].get(f.get('gallery_path',b'').decode(),int(f.get('max_gallery',b'2000')));r=[]
+    for p,e in reid.paths(qs):
+     s=(e@feat.T).squeeze();idx=reid.torch.argsort(s,descending=True)[:10].tolist();r.append({'query':str(p),'matches':[{'path':str(files[x]),'score':round(float(s[x]),4)} for x in idx]})
     return self.reply(200,{'gallery_images':len(files),'results':r})
    if self.path in ('/api/video','/api/live'):
-    sources=[x.strip() for x in f.get('sources',f.get('source',b'')).decode().splitlines() if x.strip()];gallery=f.get('gallery_path',b'').decode()
+    sources=[x.strip() for x in f.get('sources',f.get('source',b'')).decode().splitlines() if x.strip()];gallery=f.get('gallery_path',b'').decode();model=f.get('model',b'cargo').decode().lower()
+    if model not in MODELS:raise ValueError('Choose CARGO or LAGPeR.')
     if not sources:raise ValueError('Provide a video path or one camera source per line.')
     ids=[]
     for src in sources:
-     i=new_job(source=src,gallery=gallery,kind='live' if self.path.endswith('live') else 'video');ids.append(i);threading.Thread(target=process,args=(i,self.path.endswith('live')),daemon=True).start()
+     i=new_job(source=src,gallery=gallery,model=model,kind='live' if self.path.endswith('live') else 'video');ids.append(i);threading.Thread(target=process,args=(i,self.path.endswith('live')),daemon=True).start()
     return self.reply(202,{'ids':ids})
    if self.path=='/api/stop':
     j=job(f.get('id',b'').decode());j['stop'].set() if j else None;return self.reply(200,{'stopped':bool(j)})
@@ -165,6 +178,6 @@ class App(SimpleHTTPRequestHandler):
  def log_message(self,fmt,*a):print('[web] '+fmt%a)
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--host',default='127.0.0.1');p.add_argument('--port',type=int,default=8000);p.add_argument('--config',type=Path,default=DEMO/'artifacts/cargo/config.yaml');p.add_argument('--checkpoint',type=Path,default=DEMO/'artifacts/cargo/model_best.pth');p.add_argument('--detector',default='yolo11n.pt');a=p.parse_args()
- global REID,DETECTOR,GALLERY;REID=ReID(a.config,a.checkpoint);DETECTOR=Detector(a.detector);GALLERY=Gallery();OUT.mkdir(exist_ok=True);print(f'http://{a.host}:{a.port}');ThreadingHTTPServer((a.host,a.port),App).serve_forever()
+ p=argparse.ArgumentParser();p.add_argument('--host',default='127.0.0.1');p.add_argument('--port',type=int,default=8000);p.add_argument('--cargo-config',type=Path,default=DEMO/'artifacts/cargo/config.yaml');p.add_argument('--cargo-checkpoint',type=Path,default=DEMO/'artifacts/cargo/model_best.pth');p.add_argument('--lagper-config',type=Path,default=DEMO/'artifacts/lagper/config.yaml');p.add_argument('--lagper-checkpoint',type=Path,default=DEMO/'artifacts/lagper/model_best.pth');p.add_argument('--detector',default='yolo11n.pt');a=p.parse_args()
+ global MODELS,DETECTOR,GALLERIES;MODELS={'cargo':ReID(a.cargo_config,a.cargo_checkpoint),'lagper':ReID(a.lagper_config,a.lagper_checkpoint)};DETECTOR=Detector(a.detector);GALLERIES={k:Gallery(v) for k,v in MODELS.items()};OUT.mkdir(exist_ok=True);print(f'http://{a.host}:{a.port}');ThreadingHTTPServer((a.host,a.port),App).serve_forever()
 if __name__=='__main__':main()

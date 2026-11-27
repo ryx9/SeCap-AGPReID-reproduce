@@ -12,8 +12,10 @@ REPO = Path(__file__).resolve().parents[1]
 ARCHIVE = REPO / "artifacts" / "archives" / "training_artifacts.zip"
 DESTINATION = Path(__file__).resolve().parent / "artifacts" / "cargo"
 MEMBERS = {
-    "checkpoints/CARGO/model_best.pth": "model_best.pth",
-    "CARGO/config.yaml": "config.yaml",
+    "checkpoints/CARGO/model_best.pth": "cargo/model_best.pth",
+    "CARGO/config.yaml": "cargo/config.yaml",
+    "checkpoints/LAGPeR/model_best.pth": "lagper/model_best.pth",
+    "LAGPeR/config.yaml": "lagper/config.yaml",
 }
 EXPECTED_SHA256 = "9e449d6dfd1274cfb47c4987dd3632c0b6fecb89b7912a4c83ced6d180c8e32e"
 
@@ -27,14 +29,15 @@ def main() -> None:
     DESTINATION.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(ARCHIVE) as archive:
         for member, name in MEMBERS.items():
-            target = DESTINATION / name
+            target = DESTINATION.parent / name
+            target.parent.mkdir(parents=True, exist_ok=True)
             if target.exists() and not args.force:
-                print(f"Kept {target.relative_to(DESTINATION.parent)}")
+                print(f"Kept {target.relative_to(DESTINATION.parent.parent)}")
                 continue
             with archive.open(member) as source, target.open("wb") as output:
                 for chunk in iter(lambda: source.read(1024 * 1024), b""):
                     output.write(chunk)
-            print(f"Extracted {target.relative_to(DESTINATION.parent)}")
+            print(f"Extracted {target.relative_to(DESTINATION.parent.parent)}")
     digest_builder = hashlib.sha256()
     with (DESTINATION / "model_best.pth").open("rb") as checkpoint:
         for chunk in iter(lambda: checkpoint.read(1024 * 1024), b""):
