@@ -122,6 +122,11 @@ def process(i,live=False):
   while not j['stop'].is_set():
    ok,frame=cap.read()
    if not ok:break
+   # Publish a frame before the first detector/model load so the browser never
+   # appears stuck while CUDA weights initialize.
+   if live and n == 0:
+    preview=frame.copy();cv2.putText(preview,'Initializing detector and SeCap ReID…',(18,35),cv2.FONT_HERSHEY_SIMPLEX,.7,(0,255,255),2)
+    ok,buf=cv2.imencode('.jpg',preview,[cv2.IMWRITE_JPEG_QUALITY,85]);j['jpeg']=buf.tobytes() if ok else None;j['progress']='initializing model'
    hit=footage_reid(frame,j['model'],j['tracks']);draw(frame,hit,start,n+1);n+=1;j['progress']=f'{n}/{total or "?"} frames'
    if live:
     ok,buf=cv2.imencode('.jpg',frame,[cv2.IMWRITE_JPEG_QUALITY,85]);j['jpeg']=buf.tobytes() if ok else None
@@ -164,7 +169,8 @@ class App(SimpleHTTPRequestHandler):
    if not j:return self.reply(404,{'error':'Unknown camera.'})
    self.send_response(200);self.send_header('Content-Type','multipart/x-mixed-replace; boundary=f');self.end_headers()
    while not j['stop'].is_set():
-    if j.get('jpeg'):self.wfile.write(b'--f\r\nContent-Type: image/jpeg\r\n\r\n'+j['jpeg']+b'\r\n')
+    if j.get('jpeg'):
+     self.wfile.write(b'--f\r\nContent-Type: image/jpeg\r\n\r\n'+j['jpeg']+b'\r\n');self.wfile.flush()
     time.sleep(.08)
    return
   if u.path=='/':self.path='/index.html'
