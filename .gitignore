@@ -11,4 +11,5 @@ results/kaggle/
 /results/raw/
 /results/video-demos/**/*.csv
 demo/artifacts/
+demo/outputs/
 demo/.venv/
